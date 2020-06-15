@@ -22,7 +22,7 @@ export default function TodosList(){
     ));
   return(
     <div className="list-section">
-      <ul>
+      <ul className='todoList'>
         {todosList}
       </ul>
     </div>

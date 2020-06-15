@@ -1,0 +1,14 @@
+.list-section{
+  width: 100%;
+}
+
+.todoList{
+  background: darken($bgColor,20);
+  padding: 0.25;
+  margin: 1em 0.5em;
+
+  
+  & .todoItem{
+
+  }
+}
