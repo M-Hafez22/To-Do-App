@@ -12,6 +12,7 @@ export default function TodosList(){
     // Get filtered list
     const visiableItems = fliterListItem(filter, todos);
 
+
     const todosList = visiableItems.map(todo => (
       <TodoItem
         key={todo.id}
@@ -21,10 +22,14 @@ export default function TodosList(){
         deleteItem={() => dispatch({ type: 'DELETE', id: todo.id })}
       />
     ));
+
+    const message = "You're all done";
   return(
     <div className="list-section">
       <ul className='todoList'>
-        {todosList}
+        {todosList.length
+          ? todosList
+          : <p className='message'>{message}</p> }
       </ul>
     </div>
   )

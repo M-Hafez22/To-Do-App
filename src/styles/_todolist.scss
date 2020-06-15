@@ -7,7 +7,6 @@
   padding: 1em 0.5em;
   margin: 1em 0.5em;
 
-
   & .todoItem{
     margin: 0.3em;
     padding: 0.1em;
@@ -40,6 +39,11 @@
       opacity: 0;
       transition:  all 350ms ease-in-out;
     }
+  }
+
+  & .message{
+    font-size: 1.5em;
+    color: $mainColor;
   }
 }
 
