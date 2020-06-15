@@ -1,9 +1,11 @@
 import React from 'react';
-import { activeColor, deleteColor } from '../helper/colors';
+import { activeColor, deleteColor, bgColor} from '../helper/colors';
 
-export default function TodoItem({text, toggleItem, deleteItem }){
+export default function TodoItem({text, toggleItem, deleteItem, complete }){
   return(
-    <div className='todoItem'>
+    <div
+      className='todoItem'
+      style={{ backgroundColor: complete ? activeColor : bgColor }}>
 
       <li
         className='text'
@@ -14,9 +16,9 @@ export default function TodoItem({text, toggleItem, deleteItem }){
       <div className='buttons'>
         <button
           className='item-button'
-          style={{ backgroundColor: activeColor }}
+          style={{ backgroundColor: complete ? bgColor : activeColor }}
           onClick={toggleItem}>
-          Done
+          {complete ? 'Undone' : 'Done'}
         </button>
 
         <button
