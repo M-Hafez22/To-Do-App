@@ -5,12 +5,13 @@
 
 
 .App{
+  padding: 0.5em;
+  margin:1em;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 100vh;
   overflow-x: hidden;
 
   & h1{
