@@ -1,7 +1,10 @@
 import React from 'react';
+import { activeColor } from '../helper/colors';
 
-export default function FilterButton({type, onClick}){
+export default function FilterButton({type, onClick, current}){
   return(
-    <button onClick={onClick}>{type}</button>
+    <button
+      style={{color: current && activeColor}}
+      onClick={onClick}>{type}</button>
   )
 }

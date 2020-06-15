@@ -1,9 +1,11 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import FilterButton from './FilterButton';
 import { filter } from '../actions';
 
 export default function Filters() {
+
+  const currentFilter = useSelector(state => state.filter);
   const dispatch = useDispatch();
   const filterTypes = ['ALL', 'ACTIVE', 'COMPLETED'];
 
@@ -12,12 +14,13 @@ export default function Filters() {
       <FilterButton
           key={type}
           type={type}
+          current={type === currentFilter}
           onClick={() => dispatch(filter(type))}
       />
   )
 
   return(
-    <div>
+    <div className='filters'>
       {filters}
     </div>
   )
