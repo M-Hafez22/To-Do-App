@@ -8,6 +8,7 @@ import './styles/main.scss';
 function App() {
   return (
     <div className="App">
+      <h1>To Do </h1>
       <AddTodoItem />
       <Filters />
       <TodosList />
