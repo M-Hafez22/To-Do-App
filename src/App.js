@@ -1,11 +1,12 @@
 import React from 'react';
 import AddTodoItem from './components/AddTodoItem'
+import TodosList from './components/TodosList'
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello</h1>
       <AddTodoItem />
+      <TodosList />
     </div>
   );
 }

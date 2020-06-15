@@ -1,16 +1,31 @@
 import React,  { useState } from 'react'
+import { useDispatch } from 'react-redux';
 
 export default function AddTodoItem() {
+
   // input holder
   const [todo, setTodo] = useState('');
+
+  const dispatch = useDispatch();
 
   // get todo text from user
   const onChange = event => {
       setTodo(event.target.value);
   }
 
+  // submit the todo to ToDo List
+  const onSubmit = (event) => {
+    event.preventDefault();
+    todo !== '' && dispatch({
+      type:'ADD_TODO',
+      id:todo,
+      text:todo
+    });
+    setTodo('');
+  };
+  
   return(
-    <form>
+    <form onSubmit={onSubmit}>
       <input
         type="text"
         name="todo"
@@ -18,7 +33,10 @@ export default function AddTodoItem() {
         value={todo}
         onChange={onChange}
       />
-      <p>{todo}</p>
+      <button
+        type="submit">
+        Add Task
+      </button>
     </form>
   )
 }
