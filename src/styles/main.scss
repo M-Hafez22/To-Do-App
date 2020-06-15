@@ -10,7 +10,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 100vh
+  height: 100vh;
+  overflow-x: hidden;
 
   & h1{
       font-size: 3em;
