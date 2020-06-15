@@ -17,7 +17,7 @@ export default function AddTodoItem() {
   // submit the todo to ToDo List
   const onSubmit = (event) => {
     event.preventDefault();
-    todo !== '' && dispatch({
+    dispatch({
       type:'ADD_TODO',
       id:Id(),
       text:todo
@@ -25,19 +25,19 @@ export default function AddTodoItem() {
     setTodo('');
   };
 
+  const massage = 'Add Task';
+  
   return(
     <form onSubmit={onSubmit}>
       <input
         type="text"
         name="todo"
         autoComplete='off'
+        placeholder={massage}
         value={todo}
         onChange={onChange}
       />
-      <button
-        type="submit">
-        Add Task
-      </button>
+      <button type="submit">{massage}</button>
     </form>
   )
 }
