@@ -1,6 +1,7 @@
 import React,  { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import Id from '../helper/id';
+import { activeColor, deleteColor } from '../helper/colors';
 
 export default function AddTodoItem() {
 
@@ -41,8 +42,16 @@ export default function AddTodoItem() {
         onChange={onChange}
       />
       <div className='buttons'>
-          <button type="submit">{massage}</button>
-          <button onClick={cancel} >cancel</button>
+          <button
+            style={{ backgroundColor: activeColor }}
+            type="submit"
+          >{massage}
+          </button>
+          <button
+            style={{ backgroundColor: deleteColor }}
+            onClick={cancel}
+          >cancel
+          </button>
       </div>
     </form>
   )
