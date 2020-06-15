@@ -3,6 +3,7 @@ $mainColor:#142c47;
 $activeColor: #43dde6;
 $deleteColor : #fc5185;
 $bgColor: #f0f0f0;
+$curve: 0.4em;
 
 *{
     margin: 0;
@@ -10,4 +11,5 @@ $bgColor: #f0f0f0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    border-radius: $curve;
 }
