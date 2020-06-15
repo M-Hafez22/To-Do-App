@@ -9,8 +9,10 @@ form{
     padding : 0.5em;
     outline: none;
 
+
     &:focus{
       border-color: $activeColor;
+      box-shadow: 0 0  25px -1px $activeColor;
     }
 
     &:focus + .buttons{
