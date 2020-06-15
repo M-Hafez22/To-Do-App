@@ -22,6 +22,7 @@
     cursor: pointer;
 
     animation : to-bottom 500ms forwards linear;
+    transition:  background 350ms ease-in-out;
 
     & .text {
       flex-grow: 1;
