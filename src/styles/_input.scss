@@ -1,0 +1,15 @@
+form{
+  position: relative;
+
+  & input{
+    font-size: 1em;
+    border: 3px solid $mainColor;
+    font-size: 1.5em;
+    padding : 0.5em;
+
+    &:focus{
+      border-color: $activeColor;
+    }
+
+  }
+}
