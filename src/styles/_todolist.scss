@@ -21,6 +21,8 @@
     background-color: $bgColor;
     cursor: pointer;
 
+    animation : to-bottom 500ms forwards linear;
+
     & .text {
       flex-grow: 1;
       padding: 0.25em 1em;
@@ -31,4 +33,11 @@
     }
 
   }
+}
+
+
+@keyframes to-bottom {
+  0% { transform: translateY(-100px);}
+  50% {transform: translateY(-50px);}
+  100%{transform: translateY(0px);}
 }
