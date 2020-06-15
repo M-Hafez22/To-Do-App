@@ -12,6 +12,7 @@ export default function TodosList(){
         key={todo.id}
         text={todo.text}
         toggleItem={() => dispatch({ type: 'TOGGLE_TODO', id: todo.id })}
+        deleteItem={() => dispatch({ type: 'DELETE', id: todo.id })}
       />
     ));
   return(
