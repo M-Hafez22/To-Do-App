@@ -14,6 +14,9 @@ export default function AddTodoItem() {
       setTodo(event.target.value);
   }
 
+  // Clear the input field
+  const cancel = () => setTodo('');
+
   // submit the todo to ToDo List
   const onSubmit = (event) => {
     event.preventDefault();
@@ -37,7 +40,10 @@ export default function AddTodoItem() {
         value={todo}
         onChange={onChange}
       />
-      <button type="submit">{massage}</button>
+      <div className='buttons'>
+          <button type="submit">{massage}</button>
+          <button onClick={cancel} >cancel</button>
+      </div>
     </form>
   )
 }
