@@ -1,5 +1,6 @@
 import React,  { useState } from 'react'
 import { useDispatch } from 'react-redux';
+import Id from '../helper/id';
 
 export default function AddTodoItem() {
 
@@ -18,12 +19,12 @@ export default function AddTodoItem() {
     event.preventDefault();
     todo !== '' && dispatch({
       type:'ADD_TODO',
-      id:todo,
+      id:Id(),
       text:todo
     });
     setTodo('');
   };
-  
+
   return(
     <form onSubmit={onSubmit}>
       <input
