@@ -9,6 +9,14 @@ const todos = (state = [], action) => {
           complete: false
         }
       ]
+      case 'TOGGLE_TODO':
+        return (
+          state.map(
+            (todo) => todo.id === action.id
+              ? { ...todo, complete: !todo.complete }
+              : todo
+          )
+        )
     default:
       return state
   }
