@@ -1,11 +1,13 @@
 import React from 'react';
 import AddTodoItem from './components/AddTodoItem'
 import TodosList from './components/TodosList'
+import Filters from './components/Filters'
 
 function App() {
   return (
     <div className="App">
       <AddTodoItem />
+      <Filters />
       <TodosList />
     </div>
   );

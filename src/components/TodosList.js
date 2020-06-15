@@ -4,7 +4,7 @@ import TodoItem from './TodoItem'
 
 export default function TodosList(){
 
-    const todos = useSelector(state => state);
+    const todos = useSelector(state => state.todos);
     const dispatch = useDispatch();
 
     const todosList = todos.map(todo => (
