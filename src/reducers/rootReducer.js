@@ -1,11 +1,12 @@
 import todos from './todos';
 import filterReducer from './filterReducer';
+import messageReducer from './messageReducer'
 import { combineReducers } from 'redux';
-
 
 const allReducers = combineReducers({
     todos,
-    filter: filterReducer
+    filter: filterReducer,
+    message : messageReducer
 });
-//export the Combined reducer
+
 export default allReducers;
