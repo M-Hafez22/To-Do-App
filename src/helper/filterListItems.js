@@ -1,10 +1,10 @@
 const filteredList = (filtertype, list) => {
     switch (filtertype) {
-        case 'ALL':
+        case 'SHOW_ALL_TODOS':
             return list;
-        case 'COMPLETED':
+        case 'SHOW_COMPLETED_TODOS':
             return list.filter(item => item.complete);
-        case 'ACTIVE':
+        case 'SHOW_ACTIVE_TODOS':
             return list.filter(item => !item.complete);
         default:
             return list

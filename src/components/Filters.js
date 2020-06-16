@@ -14,9 +14,8 @@ export default function Filters() {
       <FilterButton
           key={type}
           type={type}
-          current={type === currentFilter}
-          onClick={() => dispatch(filter(type))}
-      />
+          current={`SHOW_${type}_TODOS` === currentFilter}
+          onClick={() =>dispatch(filter(`SHOW_${type}_TODOS`))}/>
   )
 
   return(
