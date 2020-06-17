@@ -20,24 +20,14 @@
     animation : to-bottom 500ms forwards linear;
     transition:  background 350ms ease-in-out;
 
-    &:hover .buttons{
-      transform: translateX(-5%);
-      opacity: 1;
-      z-index: 1;
-    }
-
     & .text {
       flex-grow: 1;
       padding: 0.25em 1em;
       text-align: left;
     }
 
-    & .buttons{
+    & #buttons{
       font-size: 1rem;
-      z-index: -1;
-      transform: translateX(500%);
-      opacity: 0;
-      transition:  all 350ms ease-in-out;
     }
   }
 
@@ -46,6 +36,25 @@
     color: $mainColor;
     text-transform: capitalize;
   }
+}
+
+@media (hover: hover), (pointer: fine) {
+
+  .todoItem{
+    &:hover .buttons{
+      transform: translateX(-5%);
+      opacity: 1;
+      z-index: 1;
+    }
+
+    & .buttons{
+      z-index: -1;
+      transform: translateX(500%);
+      opacity: 0;
+      transition:  all 350ms ease-in-out;
+    }
+  }
+
 }
 
 
