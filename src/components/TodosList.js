@@ -20,7 +20,7 @@ export default function TodosList(){
   todos.length > 0
     ? dispatch(updateMessage(`${filter}_MESSAGE`))
     : dispatch(updateMessage('SHOW_ZERO_TODOS_MESSAGE'))
-    
+
   const todosList = visiableItems.map(todo => (
     <TodoItem
       key={todo.id}
@@ -36,7 +36,7 @@ export default function TodosList(){
       <ul className='todoList'>
         {visiableItems.length
           ? todosList
-          : message
+          :<h3 className="message"> {message}</h3>
         }
       </ul>
     </div>
