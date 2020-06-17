@@ -20,7 +20,7 @@ export default function TodosList(){
   todos.length > 0
     ? dispatch(updateMessage(`${filter}_MESSAGE`))
     : dispatch(updateMessage('SHOW_ZERO_TODOS_MESSAGE'))
-  console.log("todoList");
+    
   const todosList = visiableItems.map(todo => (
     <TodoItem
       key={todo.id}
