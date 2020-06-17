@@ -17,8 +17,10 @@ export default function TodosList(){
   const visiableItems = fliterListItem(filter, todos);
 
   // Update the message depending on the todo list state
-  todos.length > 0 && dispatch(updateMessage(`${filter}_MESSAGE`))
-
+  todos.length > 0
+    ? dispatch(updateMessage(`${filter}_MESSAGE`))
+    : dispatch(updateMessage('SHOW_ZERO_TODOS_MESSAGE'))
+  console.log("todoList");
   const todosList = visiableItems.map(todo => (
     <TodoItem
       key={todo.id}
