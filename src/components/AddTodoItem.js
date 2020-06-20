@@ -1,7 +1,8 @@
 import React,  { useState } from 'react'
 import { useDispatch } from 'react-redux';
-import Id from '../helper/id';
 import { activeColor, deleteColor } from '../helper/colors';
+import { add_todo } from '../actions';
+
 
 export default function AddTodoItem() {
 
@@ -21,11 +22,9 @@ export default function AddTodoItem() {
   // submit the todo to ToDo List
   const onSubmit = (event) => {
     event.preventDefault();
-    todo !== '' && dispatch({
-      type:'ADD_TODO',
-      id:Id(),
-      text:todo
-    });
+    // check the input & add a todo
+    todo && dispatch(add_todo(todo));
+    // clear the input field
     setTodo('');
   };
 
@@ -44,8 +43,8 @@ export default function AddTodoItem() {
       <div className='buttons'>
           <button
             style={{ backgroundColor: activeColor }}
-            type="submit"
-          >{massage}
+            type="submit" >
+            {massage}
           </button>
           <button
             style={{ backgroundColor: deleteColor }}
