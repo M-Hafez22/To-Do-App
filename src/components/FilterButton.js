@@ -8,9 +8,11 @@ export default function FilterButton({type, onClick, current}){
     backgroundColor : activeColor,
     borderColor : activeColor
   }
+
   return(
     <button
       style={ current ?  currentFilterStyle : null}
-      onClick={onClick}>{type}</button>
+      onClick={onClick}>{type}
+    </button>
   )
 }

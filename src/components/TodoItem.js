@@ -9,8 +9,8 @@ export default function TodoItem({text, toggleItem, deleteItem, complete }){
 
       <li
         className='text'
-        onClick={toggleItem}
-        > {text}
+        onClick={toggleItem}> 
+        {text}
       </li>
 
       <div className='buttons'>

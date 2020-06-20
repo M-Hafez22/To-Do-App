@@ -34,9 +34,10 @@ export default function TodosList(){
   return(
     <div className="list-section">
       <ul className='todoList'>
-        {visiableItems.length
-          ? todosList
-          :<h3 className="message"> {message}</h3>
+        {
+          visiableItems.length
+            ? todosList
+            :<h3 className="message"> {message} </h3>
         }
       </ul>
     </div>

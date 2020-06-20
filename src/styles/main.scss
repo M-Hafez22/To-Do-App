@@ -39,6 +39,12 @@ button {
 }
 
 
+@media (max-width: 320px){
+  .App{
+    font-size: 10px;
+  }
+}
+
 
 @media (min-width: 500px){
   .App{
