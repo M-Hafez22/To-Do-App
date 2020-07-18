@@ -16,10 +16,9 @@ export default function TodosList(){
   // Get filtered list
   const visiableItems = fliterListItem(filter, todos);
 
-  // Update the message depending on the todo list state
+  // Update the message depending on the todo list state and filter
   todos.length > 0
-    ? dispatch(updateMessage(`${filter}_MESSAGE`))
-    : dispatch(updateMessage('SHOW_ZERO_TODOS_MESSAGE'))
+    && dispatch(updateMessage(`${filter}_MESSAGE`));
 
   const todosList = visiableItems.map(todo => (
     <TodoItem
