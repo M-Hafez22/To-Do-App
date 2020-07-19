@@ -1,68 +1,81 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# To-Do-App
+**A Minimalistic todo app Built with Redux**.
 
-## Available Scripts
+![App preview](./Readme_assets/preview.png)
+ > This is a practice to what I learned about **Redux**.
+#### version 1.0.0
 
-In the project directory, you can run:
+## Table of Contents
+- [Features](#features)
+- [Manual](#manual)
+- [Clone](#clone)
+- [Technologies](#technologies)
+- [Inspiration](#inspiration)
+- [License](#license)
 
-### `npm start`
+## Features
+* A minimalist To-Do list.
+* Filtering the Tasks according to the completion state.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Manual
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+* To *Add a task* insert the task message in the box and press the **Add Task** button or enter.
+* To assign a task as *completed* press the **Done** button.
+* To assign a task as *not completed* press the **Undone** button.
+* To *delete a task* press the **Delete** button.
+* For *no touch* screens hove on the task by the cursor and task buttons will appear.
+* To *Clear the input box* by one click press **Cancel**.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Clone
+To clone and run this application, you'll need Git and Node.js (which comes with npm) installed on your computer.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+From your command line:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+1. Clone this repository
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+	```bash
+      git clone https://github.com/M-Hafez22/To-Do-App.git
+	```
 
-### `npm run eject`
+1. Go into the repository
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    ```bash
+        cd To-Do-App
+    ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Install dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+	```bash
+      npm install
+  ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+4. Run the app
 
-## Learn More
+	```bash
+      npm start
+  ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technologies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ - React  : ^16.13.1
+ - Redux : ^4.0.5
+ - React-redux : ^7.2.0
+ - Sass version   : ^4.14.1
 
-### Code Splitting
+This project built with the new React hooks for Redux.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+    you can see all dependencies from **[package.json](package.json)**
 
-### Analyzing the Bundle Size
+## Inspiration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+I inspired this project form the **Dan Abramov** Redux course in egghead.io.
 
-### Making a Progressive Web App
+This project improves my knowledge about Redux by facing real-life problems and let me dive into the mindset of redux and how to think about states.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## License
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Licensed under the **[MIT license](LICENSE)**
+- Copyright (c) 2020 Mohamed Hafez
