@@ -64,13 +64,13 @@ From your command line:
  - React-redux : ^7.2.0
  - Sass version   : ^4.14.1
 
-This project built with the new React hooks for Redux.
+This project was built with the new React hooks for Redux.
 
     you can see all dependencies from **[package.json](package.json)**
 
 ## Inspiration
 
-I inspired this project form the **Dan Abramov** Redux course in egghead.io.
+I inspired this project form the [**Dan Abramov**](https://egghead.io/courses/getting-started-with-redux) Redux course in egghead.io.
 
 This project improves my knowledge about Redux by facing real-life problems and let me dive into the mindset of redux and how to think about states.
 
