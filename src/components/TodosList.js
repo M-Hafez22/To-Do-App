@@ -18,7 +18,8 @@ export default function TodosList(){
 
   // Update the message depending on the todo list state and filter
   todos.length > 0
-    && dispatch(updateMessage(`${filter}_MESSAGE`));
+    ? dispatch(updateMessage(`${filter}_MESSAGE`))
+    : dispatch(updateMessage('SHOW_ALL_TODOS_MESSAGE'))
 
   const todosList = visiableItems.map(todo => (
     <TodoItem

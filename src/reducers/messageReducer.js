@@ -1,10 +1,7 @@
-const messageReducer = (state = "You don't have a to-dos", action) => {
+const messageReducer = (state = "you have no tasks", action) => {
 	switch (action.type) {
-		case 'SHOW_ZERO_TODOS_MESSAGE' :
-			return state = "You don't have a to-dos";
-
 		case 'SHOW_ALL_TODOS_MESSAGE':
-			return state = "You're all done";
+			return state = "you have no tasks";
 
 		case 'SHOW_COMPLETED_TODOS_MESSAGE':
 			return state = "You have tasks to do";
