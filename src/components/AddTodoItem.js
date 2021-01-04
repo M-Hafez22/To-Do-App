@@ -1,7 +1,8 @@
-import React,  { useState } from 'react'
+import React,  { useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux';
 import { activeColor, deleteColor } from '../helper/colors';
 import { add_todo } from '../actions';
+import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 
 
 export default function AddTodoItem() {
@@ -9,7 +10,17 @@ export default function AddTodoItem() {
   // input holder
   const [todo, setTodo] = useState('');
 
+  const { transcript } = useSpeechRecognition();
+
   const dispatch = useDispatch();
+  // Print the speech into the input field
+  useEffect(() => {
+    if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
+      alert("your browser is not supported!");
+    }else{
+      setTodo(transcript);
+    }
+  }, [transcript]);
 
   // get todo text from user
   const onChange = event => {
@@ -40,6 +51,7 @@ export default function AddTodoItem() {
         value={todo}
         onChange={onChange}
       />
+      <button onClick={SpeechRecognition.startListening}>Start Speaking</button>
       <div className='buttons'>
           <button
             style={{ backgroundColor: activeColor }}
