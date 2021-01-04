@@ -52,7 +52,6 @@ export default function AddTodoItem() {
         value={todo}
         onChange={onChange}
       />
-      <Speech todo={todo} massage={massage}/>
       <div className='buttons'>
           <button
             style={{ backgroundColor: activeColor }}
@@ -65,6 +64,7 @@ export default function AddTodoItem() {
           >cancel
           </button>
       </div>
+      <Speech todo={todo} massage={massage}/>
     </form>
   )
 }
