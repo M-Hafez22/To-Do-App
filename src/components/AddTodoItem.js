@@ -3,16 +3,17 @@ import { useDispatch } from 'react-redux';
 import { activeColor, deleteColor } from '../helper/colors';
 import { add_todo } from '../actions';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
-
-
+import {BsMicFill} from 'react-icons/bs';
+import Speech from './Speech'
 export default function AddTodoItem() {
 
   // input holder
   const [todo, setTodo] = useState('');
 
-  const { transcript } = useSpeechRecognition();
+  const { transcript, listening } = useSpeechRecognition();
 
   const dispatch = useDispatch();
+
   // Print the speech into the input field
   useEffect(() => {
     if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
@@ -51,7 +52,7 @@ export default function AddTodoItem() {
         value={todo}
         onChange={onChange}
       />
-      <button onClick={SpeechRecognition.startListening}>Start Speaking</button>
+      <Speech todo={todo} massage={massage}/>
       <div className='buttons'>
           <button
             style={{ backgroundColor: activeColor }}
