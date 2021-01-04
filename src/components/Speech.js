@@ -6,7 +6,7 @@ import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognitio
 function Speech({todo, massage}) {
     const { listening } = useSpeechRecognition();
     return (
-        <div>
+        <div className="speech">
             {
                 listening 
                 ? <div>
