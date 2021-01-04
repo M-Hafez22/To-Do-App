@@ -11,6 +11,7 @@ function Speech({todo, massage}) {
                 listening 
                 ? <div>
                     <BsMicFill className="micOn"/>
+                    <div className="pulse-ring"></div>
                 </div>
                 : <button onClick={SpeechRecognition.startListening}>
                     <BsMicFill className="micOff"/>

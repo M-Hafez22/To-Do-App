@@ -2,3 +2,78 @@
     display: inline-block;
   }
   
+
+.micOff{
+	position: relative;
+    border: none;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    color: #fff;
+    padding:10px;
+    margin-left: 0.5em;
+    background: #142c47;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+}
+
+.micOn{
+    position: relative;
+    border: none;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    color: #fff;
+    padding:10px;
+    margin-left: 0.5em;
+    background: $deleteColor;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+}
+
+
+
+  .pulse-ring {
+    content: '';
+    width: 4.2em;
+    height: 4.2em;
+    border: 5px solid $deleteColor;
+    border-radius: 50%;
+    position: absolute;
+    top: 0em;
+    left: 19.35em;
+    animation: pulsate infinite 2s;
+  }
+  
+  @keyframes pulsate {
+    0% {
+      -webkit-transform: scale(1, 1);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1.2, 1.2);
+      opacity: 0;
+    }
+  }
