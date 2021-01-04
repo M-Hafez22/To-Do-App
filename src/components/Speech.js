@@ -16,7 +16,7 @@ function Speech({todo, massage}) {
                     <BsMicFill className="micOff"/>
                 </button>
             }
-            {todo && <button type="submit"> {massage} </button>}
+            {todo && !listening && <button type="submit"> {massage} </button>}
       
         </div>
     )
