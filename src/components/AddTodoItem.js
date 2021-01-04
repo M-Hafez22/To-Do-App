@@ -3,14 +3,14 @@ import { useDispatch } from 'react-redux';
 import { activeColor, deleteColor } from '../helper/colors';
 import { add_todo } from '../actions';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
-import {BsMicFill} from 'react-icons/bs';
 import Speech from './Speech'
+
 export default function AddTodoItem() {
 
   // input holder
   const [todo, setTodo] = useState('');
 
-  const { transcript, listening } = useSpeechRecognition();
+  const { transcript } = useSpeechRecognition();
 
   const dispatch = useDispatch();
 
