@@ -44,6 +44,7 @@ export default function AddTodoItem() {
 
   return(
     <form onSubmit={onSubmit}>
+      <>
       <input
         type="text"
         name="todo"
@@ -52,7 +53,6 @@ export default function AddTodoItem() {
         value={todo}
         onChange={onChange}
       />
-      <Speech todo={todo} massage={massage} activeColor={activeColor}/>
       <div className={todo ? 'showButtons' : 'hideButtons'}>
           <button
             style={{ backgroundColor: activeColor }}
@@ -65,6 +65,8 @@ export default function AddTodoItem() {
           >cancel
           </button>
       </div>
+      </>
+      <Speech todo={todo} massage={massage} activeColor={activeColor}/>
     </form>
   )
 }
