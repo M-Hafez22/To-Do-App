@@ -18,7 +18,6 @@ function Speech({todo, massage, activeColor}) {
                       <BsMicFill className="micOff"/>
                   </button>
             }
-            {todo && !listening && <button style={{ backgroundColor: activeColor }} type="submit"> {massage} </button>}
         </div>
     )
 }

@@ -15,20 +15,26 @@ form{
       box-shadow: 0 0  25px -1px $activeColor;
     }
 
-    &:focus + .buttons{
-      transform: translateY(100%);
-      opacity: 1;
-      z-index: 1;
-    }
+    // &:focus + .buttons{
+    //   transform: translateY(100%);
+    //   opacity: 1;
+    //   z-index: 1;
+    // }
 
   }
 
-  & .buttons {
+  & .hideButtons {
     z-index: -1;
     opacity: 0;
     position: absolute;
     top : 1.25em;
     left: 1em;
     transition: all 500ms ease-in-out;
+  }
+
+  & .showButtons{
+    transform: translateY(100%);
+    opacity: 1;
+    z-index: 1;
   }
 }

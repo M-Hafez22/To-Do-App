@@ -52,7 +52,7 @@ export default function AddTodoItem() {
         value={todo}
         onChange={onChange}
       />
-      <div className='buttons'>
+      <div className={todo ? 'showButtons' : 'hideButtons'}>
           <button
             style={{ backgroundColor: activeColor }}
             type="submit" >
