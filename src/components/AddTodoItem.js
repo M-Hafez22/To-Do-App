@@ -64,7 +64,7 @@ export default function AddTodoItem() {
           >cancel
           </button>
       </div>
-      <Speech todo={todo} massage={massage}/>
+      <Speech todo={todo} massage={massage} activeColor={activeColor}/>
     </form>
   )
 }
