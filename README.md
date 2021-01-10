@@ -15,11 +15,16 @@
 
 ## Features
 * A minimalist To-Do list.
+* Add tasks by your voice.
 * Filtering the Tasks according to the completion state.
 
 ## Manual
 
-* To *Add a task* insert the task message in the box and press the **Add Task** button or enter.
+* You can *Add a new task* by:
+    - Inserting the task message in the box and press the **Add Task** button or the enter key.
+    
+    Or
+    - Press the mic button -you don't have to hold it- start talking and then press the **Add Task** button or the enter key.
 * To assign a task as *completed* press the **Done** button.
 * To assign a task as *not completed* press the **Undone** button.
 * To *delete a task* press the **Delete** button.
@@ -35,9 +40,9 @@ From your command line:
 
 1. Clone this repository
 
-	```bash
+  ```bash
       git clone https://github.com/M-Hafez22/To-Do-App.git
-	```
+  ```
 
 1. Go into the repository
 
@@ -47,13 +52,13 @@ From your command line:
 
 3. Install dependencies
 
-	```bash
+  ```bash
       npm install
   ```
 
 4. Run the app
 
-	```bash
+  ```bash
       npm start
   ```
 
@@ -63,7 +68,9 @@ From your command line:
  - Redux : ^4.0.5
  - React-redux : ^7.2.0
  - Sass version   : ^4.14.1
-
+ - react-speech-recognition: ^3.6.0
+ - react-icons: ^4.1.0
+ 
 This project was built with the new React hooks for Redux.
 
     you can see all dependencies from **[package.json](package.json)**
