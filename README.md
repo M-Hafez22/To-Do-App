@@ -40,28 +40,13 @@ To clone and run this application, you'll need Git and npm (which comes with Nod
 From your command line:
 
 1. Clone this repository
-
-  ```bash
-      git clone https://github.com/M-Hafez22/To-Do-App.git
-  ```
-
-1. Go into the repository
-
-    ```bash
-        cd To-Do-App
-    ```
-
+  ```git clone https://github.com/M-Hafez22/To-Do-App.git```
+2. Go into the repository
+ ```cd To-Do-App```
 3. Install dependencies
-
-  ```bash
-      npm install
-  ```
-
+  ```npm install```
 4. Run the app
-
-  ```bash
-      npm start
-  ```
+  ```npm start```
 
 ## Technologies
 
