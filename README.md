@@ -30,7 +30,7 @@
 - To assign a task as *completed* press the **Done** button.
 - To assign a task as *not completed* press the **Undone** button.
 - To *delete a task* press the **Delete** button.
-- For *no touch* screens hove on the task by the cursor and task buttons (Done, Delete)will appear.
+- For *no touch* screens hove on the task by the cursor and task buttons (Done, Delete) will appear.
 - To *Clear the input box* by one click press **Cancel**.
 
 ## Clone
