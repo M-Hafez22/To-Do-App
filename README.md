@@ -1,4 +1,5 @@
 # To-Do-App
+
 **A Minimalistic todo app Built with Redux**.
 
 ![App preview](./Readme_assets/preview.png)
@@ -6,6 +7,7 @@
 ![version](https://img.shields.io/badge/version-1.1.0-blue)
 
 ## Table of Contents
+
 - [Features](#features)
 - [Manual](#manual)
 - [Clone](#clone)
@@ -14,6 +16,7 @@
 - [License](#license)
 
 ## Features
+
 * A minimalist To-Do list.
 * Add tasks by your voice.
 * Filtering the Tasks according to the completion state.
@@ -34,6 +37,7 @@
 
 
 ## Clone
+
 To clone and run this application, you'll need Git and Node.js (which comes with npm) installed on your computer.
 
 From your command line:
@@ -82,6 +86,7 @@ I inspired this project form the [**Dan Abramov**](https://egghead.io/courses/ge
 This project improves my knowledge about Redux by facing real-life problems and let me dive into the mindset of redux and how to think about states.
 
 ## License
+
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - Licensed under the **[MIT license](LICENSE)**
