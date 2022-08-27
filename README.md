@@ -10,7 +10,6 @@
 - [Features](#features)
 - [Manual](#manual)
 - [Clone](#clone)
-- [Technologies](#technologies)
 - [Inspiration](#inspiration)
 - [License](#license)
 
@@ -47,19 +46,6 @@ From your command line:
   ```npm install```
 4. Run the app
   ```npm start```
-
-## Technologies
-
- - React  : ^16.13.1
- - Redux : ^4.0.5
- - React-redux : ^7.2.0
- - Sass version   : ^4.14.1
- - react-speech-recognition: ^3.6.0
- - react-icons: ^4.1.0
- 
-This project was built with the new React hooks for Redux.
-
-    you can see all dependencies from **[package.json](package.json)**
 
 ## Inspiration
 
