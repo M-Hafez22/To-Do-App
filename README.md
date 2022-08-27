@@ -1,6 +1,7 @@
 # To-Do-App
 
 **A Minimalistic todo app Built with Redux**.
+
 ![version](https://img.shields.io/badge/version-1.1.0-blue)
 
 ![App preview](./Readme_assets/preview.png)
