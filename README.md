@@ -10,7 +10,6 @@
 - [Features](#features)
 - [Manual](#manual)
 - [Clone](#clone)
-- [Inspiration](#inspiration)
 - [License](#license)
 
 ## Features
@@ -46,12 +45,6 @@ From your command line:
   ```npm install```
 4. Run the app
   ```npm start```
-
-## Inspiration
-
-I inspired this project form the [**Dan Abramov**](https://egghead.io/courses/getting-started-with-redux) Redux course in egghead.io.
-
-This project improves my knowledge about Redux by facing real-life problems and let me dive into the mindset of redux and how to think about states.
 
 ## License
 
