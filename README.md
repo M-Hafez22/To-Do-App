@@ -22,18 +22,16 @@
 
 ## Manual
 
-* You can *Add a new task* by:
-    - Inserting the task message in the box and press the **Add Task** button or the enter key.
-    
+- You can **Add a new task** by:
+  - Inserting the task message in the box and press the **Add Task** button or the **enter key**.
     Or
-    - Press the mic button -you don't have to hold it- start talking and then press the **Add Task** button or the enter key.
-* To assign a task as *completed* press the **Done** button.
-* To assign a task as *not completed* press the **Undone** button.
-* To *delete a task* press the **Delete** button.
-* For *no touch* screens hove on the task by the cursor and task buttons will appear.
-* To *Clear the input box* by one click press **Cancel**.
+  - Press the **mic button** -you don't have to hold it- start talking and then press the **Add Task** button or the enter key.
 
-
+- To assign a task as *completed* press the **Done** button.
+- To assign a task as *not completed* press the **Undone** button.
+- To *delete a task* press the **Delete** button.
+- For *no touch* screens hove on the task by the cursor and task buttons (Done, Delete)will appear.
+- To *Clear the input box* by one click press **Cancel**.
 
 ## Clone
 
