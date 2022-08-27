@@ -16,9 +16,9 @@
 
 ## Features
 
-* A minimalist To-Do list.
-* Add tasks by your voice.
-* Filtering the Tasks according to the completion state.
+- A minimalist To-Do list.
+- Add tasks by your voice.
+- Filtering the Tasks according to the completion state.
 
 ## Manual
 
