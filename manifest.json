@@ -1,15 +1,8 @@
 {
-  "short_name": "To Do",
-  "name": "to Do App",
-  "icons": [
-    {
-      "src": "planner.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "manifest_version": 2,
+  "name": "To Do Now",
+  "author": "Mohamed Hafez",
+  "version": "1.1.0",
+  "description": "A List of just what you need to do now"
+  
 }
