@@ -7,4 +7,10 @@
     border: 2px solid var(--textColor);
     background: var(--bgColor);
   }
+  & .currentFilter{
+
+    color : var(--activeColor);
+    border-color: var(--activeColor);
+    font-weight: bold;
+  }
 }
