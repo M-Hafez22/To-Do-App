@@ -1,9 +1,10 @@
 .filters{
 
   & button{
-    color : $mainColor;
+    color : var(--mainColor);
     font-size: 1.25em;
     font-weight: 600;
-    border: 2px solid $mainColor;
+    border: 2px solid var(--mainColor);
+    background: var(--bgColor);
   }
 }

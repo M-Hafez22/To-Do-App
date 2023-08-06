@@ -1,5 +1,9 @@
 .speech{
     display: inline-block;
+    button {
+      background: var(--bgColor);
+    }
+
   }
   
 
@@ -37,7 +41,7 @@
     color: #fff;
     padding:10px;
     margin-left: 0.5em;
-    background: $deleteColor;
+    background: var(--deleteColor);
     display: inline-block;
     line-height: 50px;
     text-align: center;
@@ -59,7 +63,7 @@
     content: '';
     width: 4.2em;
     height: 4.2em;
-    border: 5px solid $deleteColor;
+    border: 5px solid var(--deleteColor);
     border-radius: 50%;
     position: absolute;
     top: 0em;

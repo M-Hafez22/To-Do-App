@@ -1,8 +1,24 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --mainColor:#f0f0f0;
+    --activeColor: #c5e300;
+    --deleteColor : #fc5185;
+    --bgColor: #011c29;
+    --bgColor-todolist: #022e47;
+  }
+}
 
-$mainColor:#142c47;
-$activeColor: #43dde6;
-$deleteColor : #fc5185;
-$bgColor: #f0f0f0;
+@media (prefers-color-scheme: light) {
+  :root {
+    --mainColor:#142c47;
+    --activeColor: #43dde6;
+    --deleteColor : #fc5185;
+    --bgColor: #f0f0f0;
+    --bgColor-todolist: #c7c5c5;
+
+  }
+}
+
 $curve: 0.4em;
 
 *{

@@ -4,15 +4,15 @@ form{
 
   & input{
     font-size: 1em;
-    border: 3px solid $mainColor;
+    border: 3px solid var(--mainColor);
     font-size: 1.5em;
     padding : 0.5em;
     outline: none;
 
 
     &:focus{
-      border-color: $activeColor;
-      box-shadow: 0 0  25px -1px $activeColor;
+      border-color: var(--activeColor);
+      box-shadow: 0 0  25px -1px var(--activeColor);
     }
 
   }

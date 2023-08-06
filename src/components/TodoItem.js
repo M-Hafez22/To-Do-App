@@ -5,7 +5,7 @@ export default function TodoItem({text, toggleItem, deleteItem, complete }){
   return(
     <div
       className='todoItem'
-      style={{ backgroundColor: complete ? activeColor : bgColor }}>
+      style={{ backgroundColor: complete ? activeColor : bgColor, color: complete && bgColor  }}>
 
       <li
         className='text'
