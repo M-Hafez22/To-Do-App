@@ -1,33 +1,33 @@
-import React from 'react';
-import { activeColor, deleteColor, bgColor} from '../helper/colors';
+import React from "react";
+import { deleteColor } from "../helper/colors";
 
-export default function TodoItem({text, toggleItem, deleteItem, complete }){
-  return(
+export default function TodoItem({ text, toggleItem, deleteItem, complete }) {
+  return (
     <div
-      className='todoItem'
-      style={{ backgroundColor: complete ? activeColor : bgColor, color: complete && bgColor  }}>
-
-      <li
-        className='text'
-        onClick={toggleItem}> 
+      className={`todoItem ${complete && "completed"}`}
+      // style={{ color: complete && activeColor, textDecoration: complete &&  'line-through' }}
+    >
+      <li className={`text ${complete && "completed"}`} onClick={toggleItem}>
         {text}
       </li>
 
-      <div className='buttons'>
+      <div className="buttons">
         <button
-          className='item-button'
-          style={{ backgroundColor: complete ? bgColor : activeColor }}
-          onClick={toggleItem}>
-          {complete ? 'Undone' : 'Done'}
+          className="item-button"
+          // style={{ color: !complete  && activeColor }}
+          onClick={toggleItem}
+        >
+          {complete ? "Undone" : "Done"}
         </button>
 
         <button
-          className='item-button'
+          className="item-button"
           style={{ backgroundColor: deleteColor }}
-          onClick={deleteItem}>
+          onClick={deleteItem}
+        >
           Delete
         </button>
       </div>
     </div>
-  )
+  );
 }

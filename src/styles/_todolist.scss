@@ -18,7 +18,11 @@
     cursor: pointer;
     animation : to-bottom 500ms forwards linear;
     transition:  background 350ms ease-in-out;
-
+    
+    & .completed {
+      text-decoration: line-through;
+      color: var(--activeColor);
+    }
     & .text {
       flex: 1;
       padding: 0.25em 1em;

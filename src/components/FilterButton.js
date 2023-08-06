@@ -1,11 +1,10 @@
 import React from 'react';
-import { activeColor, mainColor } from '../helper/colors';
+import { activeColor } from '../helper/colors';
 
 export default function FilterButton({type, onClick, current}){
 
   const currentFilterStyle = {
-    color: mainColor,
-    backgroundColor : activeColor,
+    color : activeColor,
     borderColor : activeColor
   }
 
