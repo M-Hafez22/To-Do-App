@@ -4,6 +4,8 @@
 
 ![version](https://img.shields.io/badge/version-1.1.0-blue)
 
+[![Mozilla Add-on](https://img.shields.io/badge/-Mozilla_Add--on-20123A?style=for-the-badge&logo=firefox)](https://addons.mozilla.org/en-US/firefox/addon/simple-to-do/)
+
 ![App preview](./Readme_assets/preview.png)
 
 ## Table of Contents
