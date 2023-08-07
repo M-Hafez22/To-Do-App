@@ -14,6 +14,7 @@
 - [Features](#features)
 - [Manual](#manual)
 - [Clone](#clone)
+- [Extension](#extension)
 - [License](#license)
 
 ## Features
@@ -49,6 +50,52 @@ From your command line:
   ```npm install```
 4. Run the app
   ```npm start```
+
+## Extension
+
+> It's available on Mozilla Add-ons as [Simple To-Do](https://addons.mozilla.org/en-US/firefox/addon/simple-to-do/)
+
+### Build for firefox
+
+1. Open [package.json](./package.json) and make sure that **homepage** set to **.** the current directory
+
+    ```json
+    "homepage": "."
+    ```
+
+2. Open [manifest.json](./public/manifest.json) in the public directory and make sure that **manifest_version** is set to **2**
+
+    ```json
+    "manifest_version": 2,
+    ```
+
+3. Now run buildextension script
+
+    ```bash
+    npm run buildextension
+    ```
+
+### Build for Chrome
+
+> You can download the Chrome extension release from [Here](https://github.com/M-Hafez22/To-Do-App/releases/download/simple-to-do-v1.2.0/Simple.To-Do.chrome.v1.2.0.zip)
+
+1. Open [package.json](./package.json) and make sure that **homepage** set to **.** the current directory
+
+    ```json
+    "homepage": "."
+    ```
+
+2. Open [manifest.json](./public/manifest.json) in the public directory and make sure that **manifest_version** is set to **3**
+
+    ```json
+    "manifest_version": 3,
+    ```
+
+3. Now run buildextension script
+
+    ```bash
+    npm run buildextension
+    ```
 
 ## License
 
