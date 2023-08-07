@@ -5,6 +5,7 @@
 ![version](https://img.shields.io/badge/version-1.1.0-blue)
 
 [![Mozilla Add-on](https://img.shields.io/badge/-Mozilla_Add--on-20123A?style=for-the-badge&logo=firefox)](https://addons.mozilla.org/en-US/firefox/addon/simple-to-do/)
+[![Chrome extension](https://img.shields.io/badge/-Chrome_extension-333?style=for-the-badge&logo=google-chrome)](https://github.com/M-Hafez22/To-Do-App/releases/download/simple-to-do-v1.2.0/Simple.To-Do.chrome.v1.2.0.zip)
 
 ![App preview](./Readme_assets/preview.png)
 
