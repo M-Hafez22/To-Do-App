@@ -17,8 +17,8 @@ export default function AddTodoItem() {
   // Print the speech into the input field
   useEffect(() => {
     if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
-      alert("your browser is not supported!");
-    }else{
+      alert("Your browser does not support Speech Recognition!");
+    } else {
       setTodo(transcript);
     }
   }, [transcript]);
