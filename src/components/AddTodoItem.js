@@ -1,4 +1,4 @@
-import React,  { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux';
 import { activeColor, deleteColor } from '../helper/colors';
 import { add_todo } from '../actions';
@@ -25,7 +25,7 @@ export default function AddTodoItem() {
 
   // get todo text from user
   const onChange = event => {
-      setTodo(event.target.value);
+    setTodo(event.target.value);
   }
 
   // Clear the input field
@@ -42,18 +42,18 @@ export default function AddTodoItem() {
 
   const massage = 'Add Task';
 
-  return(
+  return (
     <form onSubmit={onSubmit}>
       <>
-      <input
-        type="text"
-        name="todo"
-        autoComplete='off'
-        placeholder={massage}
-        value={todo}
-        onChange={onChange}
-      />
-      <div className={todo ? 'showButtons' : 'hideButtons'}>
+        <input
+          type="text"
+          name="todo"
+          autoComplete='off'
+          placeholder={massage}
+          value={todo}
+          onChange={onChange}
+        />
+        <div className={todo ? 'showButtons' : 'hideButtons'}>
           <button
             style={{ backgroundColor: activeColor }}
             type="submit" >
@@ -64,9 +64,9 @@ export default function AddTodoItem() {
             onClick={cancel}
           >cancel
           </button>
-      </div>
+        </div>
       </>
-      <Speech todo={todo} massage={massage} activeColor={activeColor}/>
+      <Speech todo={todo} massage={massage} activeColor={activeColor} />
     </form>
   )
 }
