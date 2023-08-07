@@ -1,8 +1,17 @@
 {
-  "manifest_version": 2,
-  "name": "To Do Now",
+  "manifest_version": 3,
+  "name": "Simple To-Do",
   "author": "Mohamed Hafez",
   "version": "1.1.0",
-  "description": "A List of just what you need to do now"
-  
+  "description": "A List of just what you need to do now.",
+  "icons": {
+    "16": "./planner.png",
+    "24": "./planner.png",
+    "32": "./planner.png",
+    "64": "./planner.png",
+    "128": "./planner.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
 }
