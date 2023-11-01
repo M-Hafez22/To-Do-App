@@ -7,7 +7,7 @@
   "theme_color": "#000000",
   "background_color": "#000000",
   "scope": "/",
-  "start_url": "/",
+  "start_url": ".",
   "icons": [
     {
       "src": "planner.png",
